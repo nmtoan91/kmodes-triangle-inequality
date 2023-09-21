@@ -30,7 +30,7 @@ from CategoricalDataClusteringFramework.Measures import *
 
 from CategoricalDataClusteringFramework.ClusteringAlgorithms.ClusteringAlgorithm import ClusteringAlgorithm
 from CategoricalDataClusteringFramework.ClusteringAlgorithms.kmodes_lib import KModes
-import CategoricalDataClusteringFramework.TDef
+import CategoricalDataClusteringFramework.TDef as TDef
 from sklearn.cluster import KMeans
 from kmodes.kmodes import KModes
 #from kmodes.util.dissim import matching_dissim

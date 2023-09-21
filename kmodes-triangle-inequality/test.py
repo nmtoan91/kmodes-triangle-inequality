@@ -6,7 +6,8 @@ from CategoricalDataClusteringFramework.Measures.Overlap import Overlap
 from CategoricalDataClusteringFramework.ClusteringAlgorithms.kModes import kModes
 
 dataPath = 'D:/DATA/CATEGORICAL/SYN/'
-dataFile = 'SYN_100000_16_256_8_10.csv'
+#dataFile = 'SYN_100000_16_256_8_10.csv'
+dataFile = 'SYN_512_8_8_8_10_wrong1.csv'
 
 
 data = pd.read_csv(dataPath+dataFile, header=None)
@@ -18,7 +19,9 @@ print( X.shape, y.shape)
 measure = Overlap(dataFile)
 measure.setUp(X, y)
 
-
+alg = kModes(X,y)
+alg.DoCluster()
+alg.CalcScore()
 
 
 

@@ -13,7 +13,7 @@ from sklearn.metrics.cluster import homogeneity_score
 from sklearn.metrics.cluster import silhouette_score
 from CategoricalDataClusteringFramework import TUlti as tulti
 import timeit
-import CategoricalDataClusteringFramework.TDef
+import CategoricalDataClusteringFramework.TDef as TDef
 import csv
 from csv import writer
 import random
