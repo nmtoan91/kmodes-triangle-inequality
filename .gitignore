@@ -162,3 +162,4 @@ cython_debug/
 
 ./saved_dist_matrices
 saved_dist_matrices/
+RESULT/
