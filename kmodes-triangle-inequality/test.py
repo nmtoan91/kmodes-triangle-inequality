@@ -5,6 +5,7 @@ import pandas as pd
 from CategoricalDataClusteringFramework.Measures.Overlap import Overlap
 from CategoricalDataClusteringFramework.ClusteringAlgorithms.kModes import kModes
 from kModesBaseline import kModesBaseline
+from kModesTriangleInequality import kModesTriangleInequality
 
 dataPath = './DataSample/'
 #dataFile = 'SYN_100000_16_256_8_10.csv'
@@ -28,6 +29,11 @@ alg.CalcScore()
 alg2 = kModesBaseline(X,y,dbname = dataFile)
 alg2.DoCluster()
 alg2.CalcScore()
+
+
+alg3 = kModesTriangleInequality(X,y,dbname = dataFile)
+alg3.DoCluster()
+alg3.CalcScore()
 
 
 
