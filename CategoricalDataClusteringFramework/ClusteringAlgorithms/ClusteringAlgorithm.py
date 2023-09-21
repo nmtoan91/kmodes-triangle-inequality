@@ -30,6 +30,15 @@ class ClusteringAlgorithm:
         self.y = y
         self.n = len(self.X)
         self.d = len(self.X[0])
+        self.D = np.zeros((self.d), int)
+        self.uniquevalues = []
+        
+        for i in range(self.d):
+            vals = np.unique(X[:,i])
+            self.uniquevalues.append(vals)
+            self.D[i] = len(vals)
+            #print(vals, len(vals))
+        
         self.k = k if k > 0 else len(np.unique(y))
         self.n_init = n_init
         self.n_iter = n_iter
