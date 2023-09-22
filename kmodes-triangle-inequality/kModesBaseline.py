@@ -83,14 +83,15 @@ class kModesBaseline(ClusteringAlgorithm):
 #for fast test 
 if __name__ == '__main__':
     
-    dataPath = 'D:/DATA/CATEGORICAL/SYN/'
-    dataFile = 'SYN_512_20_20_8_10.csv'
+    dataPath = './DataSample/'
+    #dataFile = 'SYN_100000_16_256_8_10.csv'
+    dataFile = 'SYN_512_10_20_8_10.csv'
     data = pd.read_csv(dataPath+dataFile, header=None)
     X = data.to_numpy(int)
     y = X[:,X.shape[1]-1]
     X = X[:,0:X.shape[1]-1]
 
-    alg2 = kModesBaseline(X,y)
+    alg2 = kModesBaseline(X,y,dbname = dataFile)
     alg2.DoCluster()
     alg2.CalcScore()
 
