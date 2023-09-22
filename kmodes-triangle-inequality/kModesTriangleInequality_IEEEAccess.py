@@ -98,11 +98,8 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
                     
             #22
             # Calc frequencies of categorial attributes in each cluster
-            c2 = np.zeros((self.k, self.d))
-            for k in range(self.k):
-                for d in range(self.d):
-                   c2[k][d] = c[k][d] 
-
+            c2 = np.copy(c)
+            
             frequencies = []
             for k in range(self.k):
                 frequencies_k = []
