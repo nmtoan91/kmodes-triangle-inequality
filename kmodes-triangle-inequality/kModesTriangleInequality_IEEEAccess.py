@@ -61,7 +61,7 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
         l = np.zeros((self.n, self.k))
         delta = np.zeros((self.k))
 
-        self.n_iter =200 #test
+        self.n_iter =10 #test
         for iter in range(self.n_iter):
             #6,7
             C = sklearn.metrics.pairwise_distances(c, c, metric = overlapMetric)
