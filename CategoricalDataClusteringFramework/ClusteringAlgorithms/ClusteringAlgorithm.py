@@ -76,7 +76,7 @@ class ClusteringAlgorithm:
     def CalcScore(self, verbose=True):
         starttime = timeit.default_timer()
         s="";
-        if self.n*self.k <= 8000000: 
+        if self.n*self.k <= 800000: 
             self.purity_score = tulti.CheckCLusteringPurityByHeuristic(self.y, self.labels)
         else: self.purity_score =-2
         s+= str(timeit.default_timer()-starttime)+"|";  starttime = timeit.default_timer()
@@ -88,7 +88,7 @@ class ClusteringAlgorithm:
         s+= str(timeit.default_timer()-starttime)+"|";  starttime = timeit.default_timer()
         self.HOMO_score = homogeneity_score(self.labels,self.y)
         s+= str(timeit.default_timer()-starttime)+"|";  starttime = timeit.default_timer()
-        if self.n*self.k <= 800000:
+        if self.n*self.k <= 80000:
             try: 
                 self.SILHOUETTE_score = silhouette_score(self.X, self.labels, metric= self.Overlap)
             except:
@@ -96,7 +96,7 @@ class ClusteringAlgorithm:
         else: self.SILHOUETTE_score=-2
 
         s+= str(timeit.default_timer()-starttime)+"|";  starttime = timeit.default_timer()
-        if self.n*self.k <= 8000000: 
+        if self.n*self.k <= 800000: 
             self.Ac_score, self.Pr_score,self.Rc_score =  tulti.AcPrRc(self.y, self.labels)
         else: self.Ac_score =  self.Pr_score = self.Rc_score = -2  
 
