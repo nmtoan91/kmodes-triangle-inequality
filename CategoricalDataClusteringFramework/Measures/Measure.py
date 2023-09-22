@@ -24,7 +24,7 @@ class Measure(object):
             print(colored('CANNOT OPEN FILE: ' +path),'yellow' )
             return False
 
-        print("Loaded dist matrix: " , path)
+        #print("Loaded dist matrix: " , path)
         return True
     def SavedistMatrix(self):
         if not os.path.exists('saved_dist_matrices'):

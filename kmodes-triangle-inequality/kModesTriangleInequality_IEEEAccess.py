@@ -1,3 +1,5 @@
+#paper: https://ieeexplore.ieee.org/ielx7/6287639/8600701/08681032.pdf?tag=1&fbclid=IwAR3hroHd8uORyROBSlfgagpqp60VJ0xVTbI0KiKjG01Rinsw5L1fAL7D9ag&tag=1
+#A Hybrid MPI/OpenMP Parallelization of K-Means Algorithms Accelerated Using the Triangle Inequality
 import os.path
 import sys
 sys.path.append("..")
@@ -25,7 +27,7 @@ def overlapMetric(x1,x2):
     return kModesPlain_measure.calculate(x1.astype(np.int32),x2.astype(np.int32))
     #return 0
 
-class kModesTriangleInequality(ClusteringAlgorithm):
+class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
     def test(self):
         print("a234 " + str(self.k))
 
@@ -35,69 +37,56 @@ class kModesTriangleInequality(ClusteringAlgorithm):
             kModesPlain_measure= Overlap(self.dbname)
             kModesPlain_measure.setUp(self.X, self.y)
         
-        self.name = 'kModesTriangleInequality'
+        self.name = 'kModesTriangleInequality_IEEEAccess'
         start_time = timeit.default_timer()
         
         np.random.seed(41)
-        centers = []
-        mc = []
+        c = []
+        c2 = []
 
         #init random clusters
         for k in range(self.k):
             center = np.zeros((self.d), int)
             mc_item = np.zeros((self.d), int)
             for d in range(self.d):
-                center[d] = np.random.randint(0, self.D[d])
-                mc_item[d] = np.random.randint(0, self.D[d])
-            centers.append(center)
-            mc.append(mc_item)
+                mc_item[d] = center[d] = np.random.randint(0, self.D[d])
+                 
+            c.append(center)
+            c2.append(mc_item)
         
-        dxc =  sklearn.metrics.pairwise_distances(self.X, centers, metric = overlapMetric)
         
+        #Start
+        a = np.ones((self.n),int)
+        u = np.ones((self.n))*100000000
+        l = np.zeros((self.n, self.k))
+        delta = np.zeros((self.k))
 
-        #init parameters
-        lxc = dxc
-        cx = np.argmin(dxc,1)
-        ux = np.min(lxc,1)
-        rx = np.full((self.n), False)
-
-        #New loop
         self.n_iter =10 #test
         for iter in range(self.n_iter):
-            #1
-            dcc = sklearn.metrics.pairwise_distances(centers, centers, metric = overlapMetric)
-            sc = np.ones(self.k)*100000
+            #6,7
+            C = sklearn.metrics.pairwise_distances(c, c, metric = overlapMetric)
+            s = np.ones(self.k)*100000
             for k1 in range(self.k):
                 for k2 in range(self.k):
                     if k1 == k2: continue
-                    if dcc[k1,k2] < sc[k1] : sc[k1] = dcc[k1,k2]
-                sc[k1]/=2
-
-
-            #3
-            for x in range(self.n):
-                #2
-                if ux[x] <= sc[cx[x]]: continue 
-                
-                
-                for c in range(self.k):
-                    if c == cx[x]: continue
-                    if ux[x] <= lxc[x,c]: continue
-                    if ux[x] <= 0.5*dcc[cx[x]  ,c]: continue
-
-                    #3a
-                    if rx[x]:
-                        dxc[x,cx[x]]  = overlapMetric(self.X[x], centers[cx[x]])
-                        rx[x] = False
-                    else:
-                        dxc[x,cx[x]] = ux[x]
-
-                    #3b
-                    if dxc[x,cx[x]] > lxc[x,c] or dxc[x,cx[x]] > 0.5*dcc[c,cx[x]]:
-                        dxctmp = overlapMetric(self.X[x], centers[c])
-                        if dxctmp < dxc[x,cx[x]]:
-                            cx[x] = c 
-            #4
+                    if C[k1,k2] < s[k1] : s[k1] = C[k1,k2]
+                s[k1]/=2
+            #8
+            for i in range(self.n):
+                if u[i] > s[a[i]]:
+                    r = True
+                    for k in range(self.k):
+                        z = max(l[i,k],C[a[i],k ]/2   )
+                        if k == a[i] or u[i] <= z: continue
+                        if r :
+                            u[i] = overlapMetric(self.X[i], c[a[i]])
+                            r = False
+                            if u[i] <= z: continue
+                        l[i,k] = overlapMetric(self.X[i], c[k])
+                        if l[i,k] < u[i]:
+                            a[i] = k
+                            u[i] = l[i,k]
+            #22 #23
             # Calc frequencies of categorial attributes in each cluster
             frequencies = []
             for k in range(self.k):
@@ -107,35 +96,27 @@ class kModesTriangleInequality(ClusteringAlgorithm):
                 frequencies.append(frequencies_k)
 
             for x in range(self.n):
-                minIndex = cx [x]
+                minIndex = a[x]
                 for d in range(self.d):
                     frequencies[minIndex][d][self.X[x][d]] += 1
 
             # Extract the highest frequencies attibutes
             for k in range(self.k):
                 for d in range(self.d):
-                    mc[k][d] = np.argmax(frequencies[k][d])
-
-            #5
-            for x in range(self.n):
-                for c in range(self.k):
-                    lxc[x,c] = max(lxc[x,c] - overlapMetric(centers[c], mc[c]  ),0 )
-            #6
-            for x in range(self.n):
-                ux[x] = ux[x] + overlapMetric(mc[cx[x]],centers[cx[x]] )
-                rx[x] = True
-            #7
-            for c in range(self.k):
-                centers[c] = mc[c]
+                    c2[k][d] = c[k][d]
+                    c[k][d] = np.argmax(frequencies[k][d])
 
 
-            #exit(0)
-        
-
+            for k in range(self.k):
+                delta[k] =  overlapMetric(c[k], c2[k])
+            for i in range(self.n):
+                u[i] = u[i] + delta[a[i]]
+                for k in range(self.k):
+                    l[i,k] = l[i,k] - delta[k]
 
         self.time_score = (timeit.default_timer() - start_time)/ self.n_init
         print( " Time:", self.time_score)
-        self.labels = cx
+        self.labels = a
         return self.labels
 
 
@@ -150,7 +131,7 @@ if __name__ == '__main__':
     y = X[:,X.shape[1]-1]
     X = X[:,0:X.shape[1]-1]
 
-    alg2 = kModesTriangleInequality(X,y,dbname = dataFile)
+    alg2 = kModesTriangleInequality_IEEEAccess(X,y,dbname = dataFile)
     alg2.DoCluster()
     alg2.CalcScore()
 
