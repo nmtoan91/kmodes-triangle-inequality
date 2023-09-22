@@ -70,7 +70,7 @@ class kModesTriangleInequality(ClusteringAlgorithm):
             for k1 in range(self.k):
                 for k2 in range(self.k):
                     if k1 == k2: continue
-                    if dcc[k1,k2] < sc[k] : sc[k] = dcc[k1,k2]
+                    if dcc[k1,k2] < sc[k1] : sc[k1] = dcc[k1,k2]
                 sc[k1]/=2
 
 
@@ -141,14 +141,15 @@ class kModesTriangleInequality(ClusteringAlgorithm):
 #for fast test 
 if __name__ == '__main__':
     
-    dataPath = 'D:/DATA/CATEGORICAL/SYN/'
-    dataFile = 'SYN_512_20_20_8_10.csv'
+    dataPath = './DataSample/'
+    #dataFile = 'SYN_100000_16_256_8_10.csv'
+    dataFile = 'SYN_512_10_20_8_10.csv'
     data = pd.read_csv(dataPath+dataFile, header=None)
     X = data.to_numpy(int)
     y = X[:,X.shape[1]-1]
     X = X[:,0:X.shape[1]-1]
 
-    alg2 = kModesTriangleInequality(X,y)
+    alg2 = kModesTriangleInequality(X,y,dbname = dataFile)
     alg2.DoCluster()
     alg2.CalcScore()
 
