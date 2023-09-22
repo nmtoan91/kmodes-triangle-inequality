@@ -2,6 +2,7 @@
 #A Hybrid MPI/OpenMP Parallelization of K-Means Algorithms Accelerated Using the Triangle Inequality
 import os.path
 import sys
+from tqdm import tqdm
 sys.path.append("..")
 sys.path.append(".")
 from sys import platform
@@ -62,7 +63,7 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
         delta = np.zeros((self.k))
 
         self.n_iter =10 #test
-        for iter in range(self.n_iter):
+        for iter in tqdm(range(self.n_iter)):
             #6,7
             C = sklearn.metrics.pairwise_distances(c, c, metric = overlapMetric)
             s = np.ones(self.k)*100000
@@ -93,8 +94,7 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
                     l[i,:] = sklearn.metrics.pairwise_distances(self.X[i].reshape(1, -1), c, metric = overlapMetric)
                     a[i] = np.argmin(l[i,:])
                     u[i] = l[i,a[i]]
-#                else:
-#                    count += 1
+
                     
             #22
             # Calc frequencies of categorial attributes in each cluster
@@ -114,9 +114,8 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
 
             # Extract the highest frequencies attibutes
             for k in range(self.k):
-                for d in range(self.d):
-                    c[k][d] = np.argmax(frequencies[k][d])
-
+                c[k] = np.argmax(frequencies[k],1)
+                
             #23
             for k in range(self.k):
                 delta[k] =  overlapMetric(c[k], c2[k])

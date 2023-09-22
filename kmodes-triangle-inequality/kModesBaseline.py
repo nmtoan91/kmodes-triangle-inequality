@@ -1,5 +1,6 @@
 import os.path
 import sys
+from tqdm import tqdm
 sys.path.append("..")
 sys.path.append(".")
 from sys import platform
@@ -51,7 +52,7 @@ class kModesBaseline(ClusteringAlgorithm):
 
         #Loop
         self.n_iter =10 #test
-        for iter in range(self.n_iter):
+        for iter in tqdm(range(self.n_iter)):
             # Computer distances from items to centers
             minIndexs = np.zeros((self.n),int)
             for i in range(self.n):
@@ -75,8 +76,7 @@ class kModesBaseline(ClusteringAlgorithm):
 
             # Extract the highest frequencies attibutes
             for k in range(self.k):
-                for d in range(self.d):
-                    centers[k][d] = np.argmax(frequencies[k][d])
+                centers[k] = np.argmax(frequencies[k],1)
                 
         self.time_score = (timeit.default_timer() - start_time)/ self.n_init
         print( " Time:", self.time_score)
