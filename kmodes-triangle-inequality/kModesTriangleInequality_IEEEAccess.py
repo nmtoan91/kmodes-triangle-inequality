@@ -86,7 +86,7 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
                         if l[i,k] < u[i]:
                             a[i] = k
                             u[i] = l[i,k]
-            #22 #23
+            #22
             # Calc frequencies of categorial attributes in each cluster
             frequencies = []
             for k in range(self.k):
@@ -106,9 +106,10 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
                     c2[k][d] = c[k][d]
                     c[k][d] = np.argmax(frequencies[k][d])
 
-
+            #23
             for k in range(self.k):
                 delta[k] =  overlapMetric(c[k], c2[k])
+            #24-26
             for i in range(self.n):
                 u[i] = u[i] + delta[a[i]]
                 for k in range(self.k):
