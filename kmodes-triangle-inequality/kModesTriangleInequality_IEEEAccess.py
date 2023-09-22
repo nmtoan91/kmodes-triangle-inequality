@@ -61,7 +61,7 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
         l = np.zeros((self.n, self.k))
         delta = np.zeros((self.k))
 
-        self.n_iter =10 #test
+        self.n_iter =200 #test
         for iter in range(self.n_iter):
             #6,7
             C = sklearn.metrics.pairwise_distances(c, c, metric = overlapMetric)
@@ -72,22 +72,34 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
                     if C[k1,k2] < s[k1] : s[k1] = C[k1,k2]
                 s[k1]/=2
             #8
+#            count = 0
+#            count1 = 0
             for i in range(self.n):
-                if u[i] > s[a[i]]:
+                if u[i] >= s[a[i]]:
                     r = True
                     for k in range(self.k):
-                        z = max(l[i,k],C[a[i],k ]/2   )
-                        if k == a[i] or u[i] <= z: continue
+                        z = max(l[i,k],C[a[i],k]/2)
+                        if k == a[i] or u[i] < z: continue
                         if r :
                             u[i] = overlapMetric(self.X[i], c[a[i]])
                             r = False
-                            if u[i] <= z: continue
+                            if u[i] < z: continue
                         l[i,k] = overlapMetric(self.X[i], c[k])
                         if l[i,k] < u[i]:
                             a[i] = k
                             u[i] = l[i,k]
+                            continue
+#                    count1 += 1
+                    l[i,:] = sklearn.metrics.pairwise_distances(self.X[i].reshape(1, -1), c, metric = overlapMetric)
+                    a[i] = np.argmin(l[i,:])
+                    u[i] = l[i,a[i]]
+#                else:
+#                    count += 1
+                    
             #22
             # Calc frequencies of categorial attributes in each cluster
+            c2 = c
+
             frequencies = []
             for k in range(self.k):
                 frequencies_k = []
@@ -103,7 +115,6 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
             # Extract the highest frequencies attibutes
             for k in range(self.k):
                 for d in range(self.d):
-                    c2[k][d] = c[k][d]
                     c[k][d] = np.argmax(frequencies[k][d])
 
             #23
@@ -114,12 +125,14 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
                 u[i] = u[i] + delta[a[i]]
                 for k in range(self.k):
                     l[i,k] = l[i,k] - delta[k]
-
+#            print(iter, count, count1)      
+#            print(a[1:20])
+ 
         self.time_score = (timeit.default_timer() - start_time)/ self.n_init
         print( " Time:", self.time_score)
+#        print(a[1:30])
         self.labels = a
         return self.labels
-
 
 #for fast test 
 if __name__ == '__main__':
