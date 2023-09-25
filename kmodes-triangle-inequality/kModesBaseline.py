@@ -56,10 +56,10 @@ class kModesBaseline(ClusteringAlgorithm):
             # Computer distances from items to centers
             minIndexs = np.zeros((self.n),int)
             for i in range(self.n):
-                dists = sklearn.metrics.pairwise_distances(self.X[i].reshape(1, -1), centers, metric = overlapMetric)
-                minIndexs[i] = np.argmin(dists,1)
- #           dists =  sklearn.metrics.pairwise_distances(self.X, centers, metric = overlapMetric)
- #           minIndexs = np.argmin(dists,1)
+#                dists = sklearn.metrics.pairwise_distances(self.X[i].reshape(1, -1), centers, metric = overlapMetric)
+#                minIndexs[i] = np.argmin(dists,1)
+            dists =  sklearn.metrics.pairwise_distances(self.X, centers, metric = overlapMetric)
+            minIndexs = np.argmin(dists,1)
             
             # Calc frequencies of categorial attributes in each cluster
             frequencies = []
