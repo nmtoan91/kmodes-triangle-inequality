@@ -30,7 +30,8 @@ class kModesBaseline(ClusteringAlgorithm):
     def test(self):
         print("a234 " + str(self.k))
 
-    def DoCluster(self):
+    def DoCluster(self,seed = 41):
+        self.AddVariableToPrint('seed', seed)
         global kModesPlain_measure
         if kModesPlain_measure== None: 
             kModesPlain_measure= Overlap(self.dbname)
@@ -39,7 +40,7 @@ class kModesBaseline(ClusteringAlgorithm):
         self.name = 'kModesPlain'
         start_time = timeit.default_timer()
         
-        np.random.seed(41)
+        np.random.seed(seed)
         centers = []
 
         #init random clusters
@@ -55,7 +56,7 @@ class kModesBaseline(ClusteringAlgorithm):
         for iter in tqdm(range(self.n_iter)):
             # Computer distances from items to centers
             minIndexs = np.zeros((self.n),int)
-            for i in range(self.n):
+            #for i in range(self.n):
 #                dists = sklearn.metrics.pairwise_distances(self.X[i].reshape(1, -1), centers, metric = overlapMetric)
 #                minIndexs[i] = np.argmin(dists,1)
             dists =  sklearn.metrics.pairwise_distances(self.X, centers, metric = overlapMetric)

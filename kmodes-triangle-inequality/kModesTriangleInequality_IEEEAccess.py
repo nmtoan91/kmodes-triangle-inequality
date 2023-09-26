@@ -32,7 +32,8 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
     def test(self):
         print("a234 " + str(self.k))
 
-    def DoCluster(self):
+    def DoCluster(self,seed = 41):
+        self.AddVariableToPrint('seed', seed)
         global kModesPlain_measure
         if kModesPlain_measure== None: 
             kModesPlain_measure= Overlap(self.dbname)
@@ -41,7 +42,7 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
         self.name = 'kModesTriangleInequality_IEEEAccess'
         start_time = timeit.default_timer()
         
-        np.random.seed(41)
+        np.random.seed(seed)
         c = []
         c2 = []
 
@@ -63,7 +64,8 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
         delta = np.zeros((self.k))
 
         self.n_iter =10 #test
-        for iter in tqdm(range(self.n_iter)):
+        #for iter in tqdm(range(self.n_iter)):
+        for iter in range(self.n_iter):
             #6,7
             C = sklearn.metrics.pairwise_distances(c, c, metric = overlapMetric)
             s = np.ones(self.k)*100000
