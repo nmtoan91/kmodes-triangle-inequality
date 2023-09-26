@@ -10,49 +10,58 @@ from kModesTriangleInequality import kModesTriangleInequality
 from kModesTriangleInequality_IEEEAccess import kModesTriangleInequality_IEEEAccess
 from multiprocessing import Pool
 from multiprocessing import Process
+from multiprocessing import cpu_count
 import random
 from toansttlib import TCSVResult
 import argparse
+import copy
 
 
 def f(args):
-    seed = int(random.uniform(0, 200000))
+    seed = args.seed#int(random.uniform(0, 200000))
     dataPath = args.datapath
     dataFile = args.filename
     data = pd.read_csv(dataPath+dataFile, header=None)
     X = data.to_numpy()
     y = X[:,X.shape[1]-1]
     X = X[:,0:X.shape[1]-1]
-    alg4 = kModesTriangleInequality_IEEEAccess(X,y,dbname = dataFile)
+
+    if args.method == 'kmodes_ti':
+        alg4 = kModesTriangleInequality_IEEEAccess(X,y,dbname = dataFile)
+    else :alg4 = kModesBaseline(X,y,dbname = dataFile)
+
     alg4.DoCluster(seed)
     alg4.CalcScore()
     return alg4
 
-def RunParallel():
+def RunParallel(n,d,k,np,method,datapath='./DataSample/'):
+    
     now = datetime.datetime.now()
-
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('--filename',default='SYN_512_10_20_8_10.csv')
-    parser.add_argument('--datapath',default='./DataSample/')
-    parser.add_argument('--method',default='kmodes')
-    parser.add_argument('--n',default=2)
     args = parser.parse_args()
+    args.n = n
+    args.d = d
+    args.k = k
+    args.np = np
+    args.datapath = datapath
+    args.filename = 'SYN_'+str(n)+'_'+str(d)+'_'+str(k)+'_8_10.csv'
+    args.method = method
 
-    testname = 'r'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + '_' + args.method +args.filename
+    args.seed = 41
+    
 
-    table = TCSVResult(testname)
-    with Pool( min(args.n,32)) as p:
-        R = p.map(f, [args for i in range(args.n) ])
-        print(R)
-        table.AddVariableToPrint('dataset',args.filename )
-        table.AddVariableToPrint('n',R[0].n )
-        table.AddVariableToPrint('d',R[0].n )
-        table.AddVariableToPrint('k',R[0].n )
+    parameters = [copy.deepcopy(args) for i in range(args.np) ]
+    for i in range(len(parameters)):
+        parameters[i].seed  = int(random.uniform(0, 200000))
 
-    table.WriteResultToCSV()
+    with Pool( min(args.np,cpu_count())) as p:
+        R = p.map(f, parameters)
+    return R
 
     
-    print('toansts')
+    
 if __name__ == '__main__':
-    RunParallel()
+    R = RunParallel(512,10,20,16,'kmodes_ti','./DataSample/')
+    print(R)
+    print(cpu_count())
 

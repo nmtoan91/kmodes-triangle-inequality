@@ -53,7 +53,8 @@ class kModesBaseline(ClusteringAlgorithm):
 
         #Loop
         self.n_iter =10 #test
-        for iter in tqdm(range(self.n_iter)):
+        #for iter in tqdm(range(self.n_iter)):
+        for iter in range(self.n_iter):
             # Computer distances from items to centers
             minIndexs = np.zeros((self.n),int)
             #for i in range(self.n):
