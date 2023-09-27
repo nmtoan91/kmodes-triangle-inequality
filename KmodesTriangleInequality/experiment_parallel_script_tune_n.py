@@ -19,7 +19,7 @@ if __name__ == '__main__':
     now = datetime.datetime.now()
     testname = 'r'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
 
-    for ni in [512]:
+    for ni in ns:
         GenerateDataset(ni,d,k)
         DB = RunParallel(ni,d,k,npr, 'kmodes', datapath)
         init_clustersS = [i.init_clusters for i in DB]
