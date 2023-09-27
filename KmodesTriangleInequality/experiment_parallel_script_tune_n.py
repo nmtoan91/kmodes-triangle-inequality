@@ -10,7 +10,7 @@ if __name__ == '__main__':
     ni=n = 512
     di=d = 10
     ki=k = 20
-    npr = 4
+    npr = 64
 
     ns = [2**i for i in  range(9,20)]
     datapath = GetDataPath()
