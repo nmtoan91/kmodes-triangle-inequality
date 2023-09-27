@@ -9,7 +9,7 @@ import csv
 import numpy as np
 
 db_path_window = "D:\\DATA\\CATEGORICAL\\SYN\\"
-db_path_linux = '~/DATASET/ANN_CATEGORICAL/SYN/'
+db_path_linux = '/home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/'
 
 def GetDataPath():
     db_path = db_path_window
