@@ -12,20 +12,20 @@ import pandas as pd
 if __name__ == '__main__':
     
     sigma = 0.1
-    ni=n = 2048
+    ni=n = 4096
     di=d = 64
     ki=k = 64
     range_ = 16
     npr = 64
 
-    nn = [2**i for i in  range(9,22)]
+    dd = [2**i for i in  range(3,10)]
     datapath = GetDataPath()
     GenerateDataset(n,d,k)
 
     now = datetime.datetime.now()
-    testname = 'r_tune_n_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
+    testname = 'r_tune_d_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
 
-    for ni in nn:#[512]:
+    for di in dd:#[512]:
         #Generate datasets and measures
         GenerateDataset(ni,di,ki,range_,sigma)
         dataPath = GetDataPath()
@@ -39,9 +39,9 @@ if __name__ == '__main__':
 
         #Do parallel clustering
 
-        DB = RunParallel(ni,di,ki,range_,sigma,npr, 'kmodes', datapath)
+        DB = RunParallel(ni,di,k,range_,sigma,npr, 'kmodes', datapath)
         init_clustersS = [i.init_clusters for i in DB]
-        DN = RunParallel(ni,di,ki,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
+        DN = RunParallel(ni,di,k,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
         
 
         table = TCSVResult(testname)
