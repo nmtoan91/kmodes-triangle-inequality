@@ -15,7 +15,7 @@ if __name__ == '__main__':
     ni=n = 2048
     di=d = 64
     ki=k = 64
-    range_ = 16
+    range_ = 64
     npr = 64
 
     nn = [2**i for i in  range(9,22)]
