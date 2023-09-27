@@ -1,0 +1,13 @@
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_512_10_20_8_10.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_512_10_20_8_10.csv
+ Time: 0.11336368396878242
+Purity: 0.85 NMI: 0.95 ARI: 0.92 Sil:  0.44 Acc: 0.99 Recall: 0.95 Precision: 0.89
+ Time: 0.11392312310636044
+Purity: 0.94 NMI: 0.96 ARI: 0.92 Sil:  0.46 Acc: 0.99 Recall: 0.95 Precision: 0.90
+ Time: 0.11538683213293552
+Purity: 0.92 NMI: 0.96 ARI: 0.92 Sil:  0.47 Acc: 0.99 Recall: 0.95 Precision: 0.90
+ Time: 0.11465942300856113
+Purity: 0.71 NMI: 0.94 ARI: 0.87 Sil:  0.42 Acc: 0.99 Recall: 0.95 Precision: 0.81
+ Time: 0.09683459661900998
+Purity: 0.94 NMI: 0.96 ARI: 0.92 Sil:  0.46 Acc: 0.99 Recall: 0.95 Precision: 0.90
+Results are saved at: RESULT/r09271249_SYN_512_10_20_8_10.csv.csv
