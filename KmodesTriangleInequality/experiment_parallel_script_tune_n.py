@@ -8,18 +8,18 @@ import datetime
 
 if __name__ == '__main__':
     ni=n = 512
-    di=d = 10
-    ki=k = 20
+    di=d = 32
+    ki=k = 32
     npr = 64
 
-    ns = [2**i for i in  range(9,20)]
+    ns = [2**i for i in  range(9,22)]
     datapath = GetDataPath()
     GenerateDataset(n,d,k)
 
     now = datetime.datetime.now()
     testname = 'r'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
 
-    for ni in ns:
+    for ni in ns:#[512]:
         GenerateDataset(ni,d,k)
         DB = RunParallel(ni,d,k,npr, 'kmodes', datapath)
         init_clustersS = [i.init_clusters for i in DB]
