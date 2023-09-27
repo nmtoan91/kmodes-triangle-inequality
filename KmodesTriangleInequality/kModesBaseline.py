@@ -1,6 +1,7 @@
 import os.path
 import sys
 from tqdm import tqdm
+import copy
 sys.path.append("..")
 sys.path.append(".")
 from sys import platform
@@ -29,8 +30,16 @@ def overlapMetric(x1,x2):
 class kModesBaseline(ClusteringAlgorithm):
     def test(self):
         print("a234 " + str(self.k))
-
-    def DoCluster(self,seed = 41):
+    def InitRandomCluster(self,seed):
+        np.random.seed(seed)
+        centers = []
+        for k in range(self.k):
+            center = np.zeros((self.d), int)
+            for d in range(self.d):
+                center[d] = np.random.randint(0, self.D[d])
+            centers.append(center)
+        return centers
+    def DoCluster(self,seed = 41,init_clusters=None):
         self.AddVariableToPrint('seed', seed)
         global kModesPlain_measure
         if kModesPlain_measure== None: 
@@ -40,15 +49,12 @@ class kModesBaseline(ClusteringAlgorithm):
         self.name = 'kModesPlain'
         start_time = timeit.default_timer()
         
-        np.random.seed(seed)
-        centers = []
-
-        #init random clusters
-        for k in range(self.k):
-            center = np.zeros((self.d), int)
-            for d in range(self.d):
-                center[d] = np.random.randint(0, self.D[d])
-            centers.append(center)
+        if init_clusters == None:
+            self.init_clusters = self.InitRandomCluster(seed)
+            centers = copy.deepcopy(self.init_clusters)
+        else:
+            self.init_clusters = copy.deepcopy(init_clusters)
+            centers = copy.deepcopy(self.init_clusters)
         
 
         #Loop
@@ -87,6 +93,7 @@ class kModesBaseline(ClusteringAlgorithm):
 
 
 #for fast test 
+
 if __name__ == '__main__':
     
     dataPath = './DataSample/'

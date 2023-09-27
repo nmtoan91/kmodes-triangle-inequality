@@ -30,11 +30,11 @@ def f(args):
         alg4 = kModesTriangleInequality_IEEEAccess(X,y,dbname = dataFile)
     else :alg4 = kModesBaseline(X,y,dbname = dataFile)
 
-    alg4.DoCluster(seed)
+    alg4.DoCluster(seed, args.init_clusters)
     alg4.CalcScore()
     return alg4
 
-def RunParallel(n,d,k,np,method,datapath='./DataSample/'):
+def RunParallel(n,d,k,np,method,datapath='./DataSample/', init_clustersS = None):
     
     now = datetime.datetime.now()
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -53,6 +53,9 @@ def RunParallel(n,d,k,np,method,datapath='./DataSample/'):
     parameters = [copy.deepcopy(args) for i in range(args.np) ]
     for i in range(len(parameters)):
         parameters[i].seed  = int(random.uniform(0, 200000))
+        if init_clustersS != None:
+            parameters[i].init_clusters = init_clustersS[i]
+        else : parameters[i].init_clusters = None
 
     with Pool( min(args.np,cpu_count())) as p:
         R = p.map(f, parameters)

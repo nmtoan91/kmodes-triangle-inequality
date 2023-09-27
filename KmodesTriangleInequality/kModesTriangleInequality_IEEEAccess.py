@@ -16,7 +16,7 @@ from sklearn.utils.validation import check_array
 import timeit
 from kmodes.util import get_max_value_key, encode_features, get_unique_rows, \
     decode_centroids, pandas_to_numpy
-
+import copy
 
 
 from CategoricalDataClusteringFramework.ClusteringAlgorithms.ClusteringAlgorithm import ClusteringAlgorithm
@@ -31,8 +31,16 @@ def overlapMetric(x1,x2):
 class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
     def test(self):
         print("a234 " + str(self.k))
-
-    def DoCluster(self,seed = 41):
+    def InitRandomCluster(self,seed):
+        np.random.seed(seed)
+        centers = []
+        for k in range(self.k):
+            center = np.zeros((self.d), int)
+            for d in range(self.d):
+                center[d] = np.random.randint(0, self.D[d])
+            centers.append(center)
+        return centers
+    def DoCluster(self,seed = 41,init_clusters=None):
         self.AddVariableToPrint('seed', seed)
         global kModesPlain_measure
         if kModesPlain_measure== None: 
@@ -42,19 +50,14 @@ class kModesTriangleInequality_IEEEAccess(ClusteringAlgorithm):
         self.name = 'kModesTriangleInequality_IEEEAccess'
         start_time = timeit.default_timer()
         
-        np.random.seed(seed)
-        c = []
-        c2 = []
 
         #init random clusters
-        for k in range(self.k):
-            center = np.zeros((self.d), int)
-            mc_item = np.zeros((self.d), int)
-            for d in range(self.d):
-                mc_item[d] = center[d] = np.random.randint(0, self.D[d])
-                 
-            c.append(center)
-            c2.append(mc_item)
+        if init_clusters==None:
+            c = c2 = self.InitRandomCluster(seed)
+            self.init_clusters = copy.deepcopy(c)
+        else:
+            c = c2 = copy.deepcopy(init_clusters)
+            self.init_clusters = copy.deepcopy(c)
         
         
         #Start

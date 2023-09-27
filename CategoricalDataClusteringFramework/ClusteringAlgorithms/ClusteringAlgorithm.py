@@ -45,6 +45,7 @@ class ClusteringAlgorithm:
         if n_init == -1: self.n_init = TDef.n_init 
         if n_iter ==-1 : self.n_iter = TDef.n_iter 
         self.scorebest = -2
+        self.init_clusters = None
     def SetupMeasure(self, classname):
         self.measurename = classname
         module = __import__(classname, globals(), locals(), ['object'])

@@ -16,9 +16,12 @@ def GetDataPath():
     if platform == "linux" or platform == "linux2":
         db_path = db_path_linux
     return db_path
+def GetFileNameOnly(n,d,k,range_=8, sigma_rate=0.1):
+    return "SYN_"+str(n) + "_" + str(d) + "_" + str(k)+ "_" + str(range_) +"_"+ str(int(sigma_rate*100)) +".csv"
+    
 def GetFileName(n,d,k,range_=8, sigma_rate=0.1):
     db_path = GetDataPath()
-    return db_path + "SYN_"+str(n) + "_" + str(d) + "_" + str(k)+ "_" + str(range_) +"_"+ str(int(sigma_rate*100)) +".csv"
+    return db_path + GetFileNameOnly(n,d,k,range_,sigma_rate)
 
 def IsGeneratedDataset(n,d,k,range_=8, sigma_rate=0.1):
     return os.path.isfile(GetFileName(n,d,k,range_,sigma_rate))
