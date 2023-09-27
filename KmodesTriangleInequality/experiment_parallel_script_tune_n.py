@@ -2,25 +2,44 @@ import sys
 sys.path.append("..")
 sys.path.append(".")
 from CategoricalDataClusteringFramework.Dataset.GenerateDataset import *
+from CategoricalDataClusteringFramework.Measures.Overlap import Overlap
+from kModesBaseline import kModesBaseline
 from RunParallel import RunParallel
 from toansttlib import TCSVResult
 import datetime
+import pandas as pd
 
 if __name__ == '__main__':
-    ni=n = 512
-    di=d = 32
-    ki=k = 32
+    
+    sigma = 0.1
+    ni=n = 2048
+    di=d = 64
+    ki=k = 64
+    range_ = 16
     npr = 64
 
-    ns = [2**i for i in  range(9,22)]
+    nn = [2**i for i in  range(9,22)]
     datapath = GetDataPath()
     GenerateDataset(n,d,k)
 
     now = datetime.datetime.now()
-    testname = 'r_tune_n_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
+    testname = 'r_tune_d_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
 
-    for ni in ns:#[512]:
-        GenerateDataset(ni,d,k)
+    for ni in nn:#[512]:
+        #Generate datasets and measures
+        GenerateDataset(ni,di,ki,range_,sigma)
+        dataPath = GetDataPath()
+        dataFile = GetFileNameOnly(ni,di,ki,range_,sigma)
+        data = pd.read_csv(dataPath+dataFile, header=None)
+        X = data.to_numpy()
+        y = X[:,X.shape[1]-1]
+        X = X[:,0:X.shape[1]-1]
+        alg4 = kModesBaseline(X,y,dbname = dataFile)
+        measure = Overlap(alg4.dbname)
+        measure.setUp(X,y)
+
+        #Do parallel clustering
+
         DB = RunParallel(ni,d,k,npr, 'kmodes', datapath)
         init_clustersS = [i.init_clusters for i in DB]
         DN = RunParallel(ni,d,k,npr, 'kmodes_ti', datapath,init_clustersS )
