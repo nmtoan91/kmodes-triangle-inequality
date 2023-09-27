@@ -15,6 +15,7 @@ import random
 from toansttlib import TCSVResult
 import argparse
 import copy
+from CategoricalDataClusteringFramework.Dataset.GenerateDataset import *
 
 
 def f(args):
@@ -34,7 +35,7 @@ def f(args):
     alg4.CalcScore()
     return alg4
 
-def RunParallel(n,d,k,np,method,datapath='./DataSample/', init_clustersS = None):
+def RunParallel(n,d,k,range_,sigma,np,method,datapath='./DataSample/', init_clustersS = None):
     
     now = datetime.datetime.now()
     parser = argparse.ArgumentParser(description='Process some integers.')
@@ -44,7 +45,7 @@ def RunParallel(n,d,k,np,method,datapath='./DataSample/', init_clustersS = None)
     args.k = k
     args.np = np
     args.datapath = datapath
-    args.filename = 'SYN_'+str(n)+'_'+str(d)+'_'+str(k)+'_8_10.csv'
+    args.filename = GetFileNameOnly(n,d,k,range_,sigma)
     args.method = method
 
     args.seed = 41
@@ -64,7 +65,8 @@ def RunParallel(n,d,k,np,method,datapath='./DataSample/', init_clustersS = None)
     
     
 if __name__ == '__main__':
-    R = RunParallel(512,10,20,16,'kmodes_ti','./DataSample/')
+    
+    R = RunParallel(512,10,20,12,0.2,16,'kmodes_ti','./DataSample/')
     print(R)
     print(cpu_count())
 

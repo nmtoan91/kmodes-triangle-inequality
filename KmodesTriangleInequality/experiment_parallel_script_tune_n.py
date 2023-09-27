@@ -15,7 +15,7 @@ if __name__ == '__main__':
     ni=n = 2048
     di=d = 64
     ki=k = 64
-    range_ = 64
+    range_ = 16
     npr = 64
 
     nn = [2**i for i in  range(9,22)]
@@ -34,19 +34,18 @@ if __name__ == '__main__':
         X = data.to_numpy()
         y = X[:,X.shape[1]-1]
         X = X[:,0:X.shape[1]-1]
-        alg4 = kModesBaseline(X,y,dbname = dataFile)
-        measure = Overlap(alg4.dbname)
+        measure = Overlap(dataFile)
         measure.setUp(X,y)
 
         #Do parallel clustering
 
-        DB = RunParallel(ni,d,k,npr, 'kmodes', datapath)
+        DB = RunParallel(ni,d,k,range_,sigma,npr, 'kmodes', datapath)
         init_clustersS = [i.init_clusters for i in DB]
-        DN = RunParallel(ni,d,k,npr, 'kmodes_ti', datapath,init_clustersS )
+        DN = RunParallel(ni,d,k,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
         
 
         table = TCSVResult(testname)
-        table.AddVariableToPrint('dataset',GetFileNameOnly(n,d,k))
+        table.AddVariableToPrint('dataset',GetFileNameOnly(n,d,k,range_,sigma))
         table.AddVariableToPrint('n',ni)
         table.AddVariableToPrint('d',di)
         table.AddVariableToPrint('k',ki)

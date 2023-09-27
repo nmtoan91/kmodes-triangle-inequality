@@ -5,7 +5,7 @@ import copy
 sys.path.append("..")
 sys.path.append(".")
 from sys import platform
-
+from CategoricalDataClusteringFramework.Dataset.GenerateDataset import *
 from CategoricalDataClusteringFramework.Measures.MeasureManager import MeasureManager
 from CategoricalDataClusteringFramework.Measures.Overlap import Overlap
 import numpy as np
@@ -99,6 +99,17 @@ if __name__ == '__main__':
     dataPath = './DataSample/'
     #dataFile = 'SYN_100000_16_256_8_10.csv'
     dataFile = 'SYN_512_10_20_8_10.csv'
+
+    n = 512
+    d = 10
+    k = 20
+    range_ = 16
+    sigma =0.1
+
+
+    GenerateDataset(n,d,k,range_,sigma)
+    dataPath = GetDataPath()
+    dataFile = GetFileNameOnly(n,d,k,range_,sigma)
     data = pd.read_csv(dataPath+dataFile, header=None)
     X = data.to_numpy(int)
     y = X[:,X.shape[1]-1]
