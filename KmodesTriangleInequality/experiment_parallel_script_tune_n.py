@@ -17,7 +17,7 @@ if __name__ == '__main__':
     GenerateDataset(n,d,k)
 
     now = datetime.datetime.now()
-    testname = 'r'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
+    testname = 'r_tune_n_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
 
     for ni in ns:#[512]:
         GenerateDataset(ni,d,k)
