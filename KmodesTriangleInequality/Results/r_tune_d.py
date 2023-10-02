@@ -13,10 +13,10 @@ df = pd.read_csv('KmodesTriangleInequality/Results/'+os.path.basename(__file__).
 
 
 fig, axs = plt.subplots(1,2, figsize=(8, 4))
-x = df['n'].to_numpy()
+x = df['d'].to_numpy()
 ys = np.array([df['Time1'].to_numpy(),df['Time2'].to_numpy()])
 fmta(-1)
-DrawSubFigure_SimpleLine(axs[0],x,ys,x_title='n',y_title='Clustering time (second)' )
+DrawSubFigure_SimpleLine(axs[0],x,ys,x_title='d',y_title='Clustering time (second)' )
 axs[0].legend(['Baseline','Proposed method'],ncol=1)
 
 
