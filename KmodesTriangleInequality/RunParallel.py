@@ -65,8 +65,8 @@ def RunParallel(n,d,k,range_,sigma,np,method,datapath='./DataSample/', init_clus
     
     
 if __name__ == '__main__':
-    n = 2048
-    d = 10
+    n = 5000
+    d = 200
     k = 20
     range_ = 8
     sigma =0.1
