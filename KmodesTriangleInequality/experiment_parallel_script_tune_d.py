@@ -25,8 +25,8 @@ if __name__ == '__main__':
     now = datetime.datetime.now()
     testname = 'r_tune_d_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
 
+    
     for di in dd:#[512]:
-        #Generate datasets and measures
         GenerateDataset(ni,di,ki,range_,sigma)
         dataPath = GetDataPath()
         dataFile = GetFileNameOnly(ni,di,ki,range_,sigma)
@@ -39,9 +39,9 @@ if __name__ == '__main__':
 
         #Do parallel clustering
 
-        DB = RunParallel(ni,di,k,range_,sigma,npr, 'kmodes', datapath)
+        DB = RunParallel(ni,di,ki,range_,sigma,npr, 'kmodes', datapath)
         init_clustersS = [i.init_clusters for i in DB]
-        DN = RunParallel(ni,di,k,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
+        DN = RunParallel(ni,di,ki,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
         
 
         table = TCSVResult(testname)

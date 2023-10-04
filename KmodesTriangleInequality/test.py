@@ -10,11 +10,12 @@ from kModesTriangleInequality_IEEEAccess import kModesTriangleInequality_IEEEAcc
 from CategoricalDataClusteringFramework.Dataset.GenerateDataset import *
 
 
-n = 5000
-d = 200
-k = 20
-range_ = 8
+n = 4096
+d = 8
+k = 64
+range_ = 16
 sigma =0.1
+
 GenerateDataset(n,d,k,range_,sigma)
 
 dataPath = GetDataPath()

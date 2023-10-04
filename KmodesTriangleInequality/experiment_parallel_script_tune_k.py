@@ -18,9 +18,9 @@ if __name__ == '__main__':
     range_ = 16
     npr = 4
 
-    kk = [2**i for i in  range(3,10)]
+    kk = [2**i for i in  range(3,12)]
     datapath = GetDataPath()
-    GenerateDataset(n,d,k)
+    
 
     now = datetime.datetime.now()
     testname = 'r_tune_k_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
@@ -39,9 +39,9 @@ if __name__ == '__main__':
 
         #Do parallel clustering
 
-        DB = RunParallel(ni,di,k,range_,sigma,npr, 'kmodes', datapath)
+        DB = RunParallel(ni,di,ki,range_,sigma,npr, 'kmodes', datapath)
         init_clustersS = [i.init_clusters for i in DB]
-        DN = RunParallel(ni,di,k,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
+        DN = RunParallel(ni,di,ki,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
         
 
         table = TCSVResult(testname)

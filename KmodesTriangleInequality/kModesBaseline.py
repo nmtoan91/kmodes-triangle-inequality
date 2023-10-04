@@ -100,10 +100,10 @@ if __name__ == '__main__':
     #dataFile = 'SYN_100000_16_256_8_10.csv'
     #dataFile = 'SYN_512_10_20_8_10.csv'
 
-    n = 512
-    d = 10
-    k = 20
-    range_ = 8
+    n = 4096
+    d = 8
+    k = 64
+    range_ = 16
     sigma =0.1
 
 
