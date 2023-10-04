@@ -96,14 +96,14 @@ class kModesBaseline(ClusteringAlgorithm):
 
 if __name__ == '__main__':
     
-    dataPath = './DataSample/'
+    #dataPath = './DataSample/'
     #dataFile = 'SYN_100000_16_256_8_10.csv'
-    dataFile = 'SYN_512_10_20_8_10.csv'
+    #dataFile = 'SYN_512_10_20_8_10.csv'
 
     n = 512
     d = 10
     k = 20
-    range_ = 16
+    range_ = 8
     sigma =0.1
 
 

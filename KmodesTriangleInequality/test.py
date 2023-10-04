@@ -7,11 +7,18 @@ from CategoricalDataClusteringFramework.ClusteringAlgorithms.kModes import kMode
 from kModesBaseline import kModesBaseline
 from kModesTriangleInequality import kModesTriangleInequality
 from kModesTriangleInequality_IEEEAccess import kModesTriangleInequality_IEEEAccess
+from CategoricalDataClusteringFramework.Dataset.GenerateDataset import *
 
-dataPath = './DataSample/'
-#dataFile = 'SYN_100000_16_256_8_10.csv'
-dataFile = 'SYN_512_10_20_8_10.csv'
-#dataFile ='SYN_8096_50_50_8_10.csv'
+
+n = 512
+d = 10
+k = 20
+range_ = 8
+sigma =0.1
+GenerateDataset(n,d,k,range_,sigma)
+
+dataPath = GetDataPath()
+dataFile = GetFileNameOnly(n,d,k,range_,sigma)
 
 
 data = pd.read_csv(dataPath+dataFile, header=None)

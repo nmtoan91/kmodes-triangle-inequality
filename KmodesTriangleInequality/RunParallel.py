@@ -65,8 +65,23 @@ def RunParallel(n,d,k,range_,sigma,np,method,datapath='./DataSample/', init_clus
     
     
 if __name__ == '__main__':
+    n = 512
+    d = 10
+    k = 20
+    range_ = 8
+    sigma =0.1
+    ncores = 8
+    dataPath = GetDataPath()
     
-    R = RunParallel(512,10,20,12,0.2,16,'kmodes_ti','./DataSample/')
-    print(R)
+    GenerateDataset(n,d,k,range_,sigma)
+
+    print('kmodes baseline')
+    R1 = RunParallel(n,d,k,range_,sigma,ncores,'kmodes',dataPath)
+    print('\n\nkmodes_ti')
+    R2 = RunParallel(n,d,k,range_,sigma,ncores,'kmodes_ti',dataPath)
+    
+
+
+    #print(R)
     print(cpu_count())
 
