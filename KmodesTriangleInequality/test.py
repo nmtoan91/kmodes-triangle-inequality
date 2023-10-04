@@ -10,7 +10,7 @@ from kModesTriangleInequality_IEEEAccess import kModesTriangleInequality_IEEEAcc
 from CategoricalDataClusteringFramework.Dataset.GenerateDataset import *
 
 
-n = 512
+n = 50000
 d = 10
 k = 20
 range_ = 8
