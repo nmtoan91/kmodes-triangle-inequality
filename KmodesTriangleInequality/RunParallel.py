@@ -65,12 +65,12 @@ def RunParallel(n,d,k,range_,sigma,np,method,datapath='./DataSample/', init_clus
     
     
 if __name__ == '__main__':
-    n = 512
+    n = 2048
     d = 10
     k = 20
     range_ = 8
     sigma =0.1
-    ncores = 8
+    ncores = 2
     dataPath = GetDataPath()
     
     GenerateDataset(n,d,k,range_,sigma)
