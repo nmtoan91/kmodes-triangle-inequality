@@ -17,17 +17,16 @@ if __name__ == '__main__':
     ki=k = 64
     range_ = 16
     npr = 4
-
-    for range_ in [2,4,8,16,32]:
-        dd = [2**i for i in  range(3,10)]
+    for sigma in [0.01,0.02,0.04,0.08,0.16,0.32,0.64]:
+        kk = [2**i for i in  range(3,12)]
         datapath = GetDataPath()
-        GenerateDataset(n,d,k)
+        
 
         now = datetime.datetime.now()
-        testname = 'r_tune_d_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
+        testname = 'r_tune_k_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
 
-        
-        for di in dd:#[512]:
+        for ki in kk:#[512]:
+            #Generate datasets and measures
             GenerateDataset(ni,di,ki,range_,sigma)
             dataPath = GetDataPath()
             dataFile = GetFileNameOnly(ni,di,ki,range_,sigma)

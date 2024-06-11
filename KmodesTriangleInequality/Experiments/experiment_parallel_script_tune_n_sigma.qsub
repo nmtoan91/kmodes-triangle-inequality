@@ -1,0 +1,9 @@
+#!/bin/bash
+#PBS -q SINGLE
+#PBS -oe
+#PBS -l select=8:mpiprocs=16
+#PBS -N n_sigma
+
+cd ~/WORK/kmodes-triangle-inequality/
+python KmodesTriangleInequality/experiment_parallel_script_tune_n_sigma.py
+

@@ -18,7 +18,7 @@ if __name__ == '__main__':
     range_ = 16
     npr = 4
 
-    for range_ in [2,4,8,16,32]:
+    for sigma in [0.01,0.02,0.04,0.08,0.16,0.32,0.64]:
         dd = [2**i for i in  range(3,10)]
         datapath = GetDataPath()
         GenerateDataset(n,d,k)
