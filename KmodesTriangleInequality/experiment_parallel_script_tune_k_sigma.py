@@ -23,7 +23,7 @@ if __name__ == '__main__':
         
 
         now = datetime.datetime.now()
-        testname = 'r_tune_k_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k)
+        testname = 'r_tune_k_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k,range_,sigma)
 
         for ki in kk:#[512]:
             #Generate datasets and measures
