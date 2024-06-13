@@ -25,7 +25,7 @@ if __name__ == '__main__':
     now = datetime.datetime.now()
     testname = 'r_tune_sigma_'+str(now.year-2023)+str(now.month)+str(now.day)+str(now.hour)+str(now.second)+ '_'  + GetFileNameOnly(n,d,k,range_,sigma)
 
-    for sigma in [0.1,0.2,0.4,0.8,0.16,0.32,0.64,1.28,2.56]:#[512]:
+    for sigma in [0.1,0.2,0.4,0.8,1.6,3.2,6.4,12.8]:#[512]:
         #Generate datasets and measures
         GenerateDataset(ni,di,ki,range_,sigma)
         dataPath = GetDataPath()

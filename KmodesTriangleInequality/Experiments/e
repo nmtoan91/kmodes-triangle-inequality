@@ -1,136 +1,134 @@
 Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_2048_64_64_8_10.csv
 Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_2048_64_64_16_10.csv
- Time: 4.94767593741417
-Purity: 0.81 NMI: 0.97 ARI: 0.88 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.81
- Time: 4.976809297967702
-Purity: 0.83 NMI: 0.98 ARI: 0.94 Sil:  -2.00 Acc: 1.00 Recall: 0.97 Precision: 0.91
- Time: 4.972651893924922
-Purity: 0.92 NMI: 1.00 ARI: 0.98 Sil:  -2.00 Acc: 1.00 Recall: 0.99 Precision: 0.97
- Time: 7.004893172159791
-Purity: 0.92 NMI: 1.00 ARI: 0.98 Sil:  -2.00 Acc: 1.00 Recall: 0.99 Precision: 0.97
- Time: 7.035940122976899
-Purity: 0.85 NMI: 0.97 ARI: 0.95 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.94
- Time: 7.058903080224991
-Purity: 0.83 NMI: 0.98 ARI: 0.94 Sil:  -2.00 Acc: 1.00 Recall: 0.97 Precision: 0.91
- Time: 7.060223178006709
-Purity: 0.81 NMI: 0.97 ARI: 0.88 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.81
+ Time: 5.196367666032165
+Purity: 0.97 NMI: 0.99 ARI: 0.97 Sil:  -2.00 Acc: 1.00 Recall: 0.98 Precision: 0.97
+ Time: 5.167978842370212
+Purity: 0.86 NMI: 0.97 ARI: 0.90 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.86
+ Time: 5.139485412836075
+Purity: 0.81 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.91
+ Time: 5.216845441609621
+Purity: 0.88 NMI: 0.97 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.91
+ Time: 7.233772845659405
+Purity: 0.97 NMI: 0.99 ARI: 0.97 Sil:  -2.00 Acc: 1.00 Recall: 0.98 Precision: 0.97
+ Time: 7.264415858592838
+Purity: 0.88 NMI: 0.97 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.91
+ Time: 7.373189045023173
+Purity: 0.86 NMI: 0.97 ARI: 0.90 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.86
+ Time: 7.371758735273033
+Purity: 0.81 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.91
 Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
 Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_2048_64_64_16_20.csv
- Time: 4.993836696725339
+ Time: 5.150130960065871
 Purity: 0.11 NMI: 0.31 ARI: 0.02 Sil:  -2.00 Acc: 0.97 Recall: 0.04 Precision: 0.04
- Time: 5.02003325400874
-Purity: 0.10 NMI: 0.31 ARI: 0.03 Sil:  -2.00 Acc: 0.97 Recall: 0.04 Precision: 0.04
- Time: 5.022344882972538
-Purity: 0.10 NMI: 0.29 ARI: 0.02 Sil:  -2.00 Acc: 0.97 Recall: 0.04 Precision: 0.03
- Time: 5.016299354564398
+ Time: 5.180862378608436
+Purity: 0.12 NMI: 0.32 ARI: 0.03 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.05
+ Time: 5.188602766953409
 Purity: 0.12 NMI: 0.32 ARI: 0.04 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.05
- Time: 7.462180558033287
+ Time: 5.193782494030893
+Purity: 0.12 NMI: 0.33 ARI: 0.05 Sil:  -2.00 Acc: 0.97 Recall: 0.06 Precision: 0.06
+ Time: 7.5730662945657965
+Purity: 0.12 NMI: 0.33 ARI: 0.05 Sil:  -2.00 Acc: 0.97 Recall: 0.06 Precision: 0.06
+ Time: 7.599373888783157
 Purity: 0.12 NMI: 0.32 ARI: 0.04 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.05
- Time: 7.488487719185651
-Purity: 0.10 NMI: 0.31 ARI: 0.03 Sil:  -2.00 Acc: 0.97 Recall: 0.04 Precision: 0.04
- Time: 7.495443730428815
+ Time: 7.674999375361949
+Purity: 0.12 NMI: 0.32 ARI: 0.03 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.05
+ Time: 7.681821350846439
 Purity: 0.11 NMI: 0.31 ARI: 0.02 Sil:  -2.00 Acc: 0.97 Recall: 0.04 Precision: 0.04
 Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
-Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 0.4
-CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_40.csv.json yellow
-Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_40.csv.json
- Time: 4.999785638973117
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_2048_64_64_16_40.csv
+ Time: 5.186262385174632
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.508954352606088
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.439111717790365
+Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.487617913447321
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_2048_64_64_16_80.csv
+ Time: 5.155437393765896
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 5.117627610545606
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 5.172289236821234
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 5.199892024602741
+Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.474145624041557
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.52497451743111
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.492385617829859
+Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.545635775849223
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
+Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 1.6
+CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_160.csv.json yellow
+Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_160.csv.json
+ Time: 5.12750923121348
 Purity: 0.08 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 4.973818313609809
+ Time: 5.205254032835365
+Purity: 0.06 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 5.1243634955957535
+Purity: 0.06 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 5.20668947417289
 Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 5.008036450203508
-Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.402792756818235
-Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.539269200991839
+Purity: 0.06 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 7.556966330204159
+Purity: 0.06 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 7.587227986939252
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.62374995034188
+Purity: 0.08 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
 Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
-Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 0.8
-CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_80.csv.json yellow
-Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_80.csv.json
- Time: 4.978053663950414
-Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 5.000641929171979
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 4.960919182933867
-Purity: 0.06 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.01 Precision: 0.01
- Time: 7.302987965196371
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.240171251818538
-Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.302806469425559
+Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 3.2
+CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_320.csv.json yellow
+Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_320.csv.json
+ Time: 5.201513662002981
+Purity: 0.07 NMI: 0.24 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 5.195983228832484
+Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 5.168176575470715
+Purity: 0.07 NMI: 0.24 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 5.20491313058883
+Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 7.485623053554446
+Purity: 0.07 NMI: 0.24 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.458520994428545
+Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 7.609226869419217
 Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
 Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
-Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 0.16
-CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_16.csv.json yellow
-Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_16.csv.json
- Time: 4.937841673381627
-Purity: 0.55 NMI: 0.68 ARI: 0.46 Sil:  -2.00 Acc: 0.98 Recall: 0.48 Precision: 0.45
- Time: 4.987205433472991
-Purity: 0.55 NMI: 0.68 ARI: 0.47 Sil:  -2.00 Acc: 0.98 Recall: 0.49 Precision: 0.46
- Time: 8.306540649570525
-Purity: 0.50 NMI: 0.66 ARI: 0.44 Sil:  -2.00 Acc: 0.98 Recall: 0.46 Precision: 0.44
- Time: 8.333481259830297
-Purity: 0.55 NMI: 0.68 ARI: 0.46 Sil:  -2.00 Acc: 0.98 Recall: 0.48 Precision: 0.45
-Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
-Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 0.32
-CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_32.csv.json yellow
-Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_32.csv.json
- Time: 4.973879847023636
-Purity: 0.07 NMI: 0.25 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 4.94838811904192
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.330675556138158
-Purity: 0.07 NMI: 0.25 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.316271634213626
-Purity: 0.07 NMI: 0.25 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.323212114162743
-Purity: 0.07 NMI: 0.25 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
-Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
-Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 0.64
-CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_64.csv.json yellow
-Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_64.csv.json
- Time: 4.944964742753655
-Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
- Time: 4.991700449772179
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 4.980662038177252
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 5.008853870164603
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.35137692661956
-Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
-Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
-Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 1.28
-CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_128.csv.json yellow
-Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_128.csv.json
- Time: 4.971759433392435
-Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
- Time: 4.983424970973283
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.305202726367861
+Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 6.4
+CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_640.csv.json yellow
+Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_640.csv.json
+ Time: 5.19254588522017
 Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.01 Precision: 0.01
- Time: 7.389645998552441
+ Time: 5.200012697465718
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 5.208862588740885
 Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
- Time: 7.360868129786104
-Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 5.2348475901409985
+Purity: 0.07 NMI: 0.24 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.01
+ Time: 7.547721308935434
+Purity: 0.07 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.01 Precision: 0.01
 Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
-Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 2.56
-CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_256.csv.json yellow
-Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_256.csv.json
- Time: 4.949481263011694
-Purity: 0.06 NMI: 0.23 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.01 Precision: 0.01
- Time: 4.96343703456223
-Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 4.971920937858522
+Generateing dataset n= 2048 d= 64 k= 64 range_= 16 sigmarate= 12.8
+CANNOT OPEN FILE: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_1280.csv.json yellow
+Saving Overlap to: saved_dist_matrices/json/Overlap_SYN_2048_64_64_16_1280.csv.json
+ Time: 5.188048125989735
 Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 4.983398202527314
-Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
- Time: 7.233146875165403
-Purity: 0.06 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.561918920557946
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 7.634382726345211
+Purity: 0.07 NMI: 0.24 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
 Results are saved at: RESULT/r_tune_sigma_16131044_SYN_2048_64_64_16_10.csv.csv
 
 =================================== RESOURCE INFORMATION ===================================
  Requested Resource:
  mem=512000000kb,walltime=168:00:00,ncpus=128,place=pack 
  Used Resource: 
- mem=781128kb,walltime=00:10:30,ncpus=128,cpupercent=395,vmem=8234244kb
+ mem=773808kb,walltime=00:09:11,ncpus=128,cpupercent=396,vmem=8234244kb
 ============================================================================================
