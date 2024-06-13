@@ -1,0 +1,547 @@
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_8_16_10.csv
+ Time: 1.4586899992078544
+Purity: 0.50 NMI: 0.85 ARI: 0.79 Sil:  0.15 Acc: 0.95 Recall: 0.84 Precision: 0.79
+ Time: 1.4792525449767708
+Purity: 0.74 NMI: 0.86 ARI: 0.79 Sil:  0.15 Acc: 0.95 Recall: 0.87 Precision: 0.78
+ Time: 1.4682626398280263
+Purity: 1.00 NMI: 1.00 ARI: 1.00 Sil:  0.22 Acc: 1.00 Recall: 1.00 Precision: 1.00
+ Time: 1.781031050812453
+Purity: 0.50 NMI: 0.85 ARI: 0.79 Sil:  0.15 Acc: 0.95 Recall: 0.84 Precision: 0.79
+ Time: 1.7491981564089656
+Purity: 0.74 NMI: 0.86 ARI: 0.79 Sil:  0.15 Acc: 0.95 Recall: 0.87 Precision: 0.78
+ Time: 1.775296128820628
+Purity: 1.00 NMI: 1.00 ARI: 1.00 Sil:  0.22 Acc: 1.00 Recall: 1.00 Precision: 1.00
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_16_16_10.csv
+ Time: 2.6573867954313757
+Purity: 1.00 NMI: 1.00 ARI: 1.00 Sil:  0.21 Acc: 1.00 Recall: 1.00 Precision: 1.00
+ Time: 2.65196064831689
+Purity: 0.88 NMI: 0.93 ARI: 0.90 Sil:  0.18 Acc: 0.99 Recall: 0.93 Precision: 0.88
+ Time: 2.6656031779944898
+Purity: 1.00 NMI: 1.00 ARI: 1.00 Sil:  0.21 Acc: 1.00 Recall: 1.00 Precision: 1.00
+ Time: 2.6744799241423607
+Purity: 0.87 NMI: 0.93 ARI: 0.89 Sil:  0.18 Acc: 0.99 Recall: 0.92 Precision: 0.88
+ Time: 3.405248904787004
+Purity: 1.00 NMI: 1.00 ARI: 1.00 Sil:  0.21 Acc: 1.00 Recall: 1.00 Precision: 1.00
+ Time: 3.35981740700081
+Purity: 0.88 NMI: 0.93 ARI: 0.90 Sil:  0.18 Acc: 0.99 Recall: 0.93 Precision: 0.88
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_32_16_10.csv
+ Time: 4.9860910163261
+Purity: 0.91 NMI: 0.97 ARI: 0.95 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.94
+ Time: 4.995209279749543
+Purity: 1.00 NMI: 1.00 ARI: 1.00 Sil:  -2.00 Acc: 1.00 Recall: 1.00 Precision: 1.00
+ Time: 5.006770187243819
+Purity: 0.87 NMI: 0.96 ARI: 0.91 Sil:  -2.00 Acc: 0.99 Recall: 0.95 Precision: 0.88
+ Time: 4.997752747591585
+Purity: 0.86 NMI: 0.94 ARI: 0.90 Sil:  -2.00 Acc: 0.99 Recall: 0.92 Precision: 0.88
+ Time: 6.617883716616779
+Purity: 0.86 NMI: 0.94 ARI: 0.90 Sil:  -2.00 Acc: 0.99 Recall: 0.92 Precision: 0.88
+ Time: 6.651396559551358
+Purity: 1.00 NMI: 1.00 ARI: 1.00 Sil:  -2.00 Acc: 1.00 Recall: 1.00 Precision: 1.00
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_64_16_10.csv
+ Time: 9.712870964035393
+Purity: 0.87 NMI: 0.97 ARI: 0.91 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.88
+ Time: 9.721048085205258
+Purity: 0.83 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.98 Precision: 0.88
+ Time: 13.220147221256047
+Purity: 0.83 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.98 Precision: 0.88
+ Time: 13.47335406197235
+Purity: 0.90 NMI: 0.99 ARI: 0.96 Sil:  -2.00 Acc: 1.00 Recall: 0.99 Precision: 0.94
+ Time: 13.230195696186275
+Purity: 0.87 NMI: 0.97 ARI: 0.91 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.88
+ Time: 13.485773571766913
+Purity: 0.85 NMI: 0.96 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.92
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_128_16_10.csv
+ Time: 19.10850575817749
+Purity: 0.79 NMI: 0.97 ARI: 0.91 Sil:  -2.00 Acc: 1.00 Recall: 0.94 Precision: 0.88
+ Time: 19.126727200392633
+Purity: 0.88 NMI: 0.97 ARI: 0.92 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.90
+ Time: 19.12493168376386
+Purity: 0.90 NMI: 0.99 ARI: 0.96 Sil:  -2.00 Acc: 1.00 Recall: 0.97 Precision: 0.95
+ Time: 19.340215162560344
+Purity: 0.87 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.91
+ Time: 27.360947434790432
+Purity: 0.88 NMI: 0.97 ARI: 0.92 Sil:  -2.00 Acc: 1.00 Recall: 0.95 Precision: 0.90
+ Time: 27.228584963828325
+Purity: 0.79 NMI: 0.97 ARI: 0.91 Sil:  -2.00 Acc: 1.00 Recall: 0.94 Precision: 0.88
+ Time: 27.465550176613032
+Purity: 0.90 NMI: 0.99 ARI: 0.96 Sil:  -2.00 Acc: 1.00 Recall: 0.97 Precision: 0.95
+ Time: 32.69611337557435
+Purity: 0.87 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: 1.00 Recall: 0.96 Precision: 0.91
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_256_16_10.csv
+ Time: 38.256960367970166
+Purity: -2.00 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.426576350815594
+Purity: -2.00 NMI: 0.98 ARI: 0.92 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.55571041079238
+Purity: -2.00 NMI: 0.97 ARI: 0.89 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 45.72675423566252
+Purity: -2.00 NMI: 0.99 ARI: 0.93 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 57.56642953818664
+Purity: -2.00 NMI: 0.99 ARI: 0.93 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 57.762323181796816
+Purity: -2.00 NMI: 0.97 ARI: 0.89 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 69.5407387420535
+Purity: -2.00 NMI: 0.98 ARI: 0.93 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 57.834254779387265
+Purity: -2.00 NMI: 0.98 ARI: 0.92 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_512_16_10.csv
+ Time: 82.2655482839793
+Purity: -2.00 NMI: 0.87 ARI: 0.54 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 84.00350579218939
+Purity: -2.00 NMI: 0.88 ARI: 0.58 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 83.81639573061838
+Purity: -2.00 NMI: 0.88 ARI: 0.56 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 84.4782340680249
+Purity: -2.00 NMI: 0.87 ARI: 0.54 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 116.1436869607307
+Purity: -2.00 NMI: 0.87 ARI: 0.54 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 116.37860480062663
+Purity: -2.00 NMI: 0.88 ARI: 0.56 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 117.1339226075448
+Purity: -2.00 NMI: 0.87 ARI: 0.54 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_1024_16_10.csv
+ Time: 166.54480152968318
+Purity: -2.00 NMI: 0.80 ARI: 0.06 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 167.35171782141552
+Purity: -2.00 NMI: 0.80 ARI: 0.05 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 167.92346120476722
+Purity: -2.00 NMI: 0.80 ARI: 0.05 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 168.28901485223324
+Purity: -2.00 NMI: 0.80 ARI: 0.05 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 223.92854927415027
+Purity: -2.00 NMI: 0.80 ARI: 0.05 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 226.27376916864887
+Purity: -2.00 NMI: 0.80 ARI: 0.05 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_2048_16_10.csv
+ Time: 331.5767878104001
+Purity: -2.00 NMI: 0.89 ARI: 0.03 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 334.01915314439685
+Purity: -2.00 NMI: 0.89 ARI: 0.02 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 334.09610115075486
+Purity: -2.00 NMI: 0.89 ARI: 0.03 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 334.8668479723856
+Purity: -2.00 NMI: 0.89 ARI: 0.03 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 471.30022721821445
+Purity: -2.00 NMI: 0.89 ARI: 0.03 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 476.0783967982046
+Purity: -2.00 NMI: 0.89 ARI: 0.03 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 479.1041272983886
+Purity: -2.00 NMI: 0.89 ARI: 0.02 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 480.2713303359225
+Purity: -2.00 NMI: 0.89 ARI: 0.03 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_161298_SYN_4096_64_64_16_10.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_8_16_20.csv
+ Time: 1.467687932215631
+Purity: 0.99 NMI: 0.98 ARI: 0.98 Sil:  0.05 Acc: 1.00 Recall: 0.99 Precision: 0.99
+ Time: 1.4623697163537144
+Purity: 0.99 NMI: 0.98 ARI: 0.98 Sil:  0.05 Acc: 1.00 Recall: 0.98 Precision: 0.98
+ Time: 1.4713432719931006
+Purity: 0.99 NMI: 0.98 ARI: 0.98 Sil:  0.05 Acc: 1.00 Recall: 0.99 Precision: 0.99
+ Time: 2.106359578669071
+Purity: 0.99 NMI: 0.98 ARI: 0.98 Sil:  0.05 Acc: 1.00 Recall: 0.99 Precision: 0.99
+ Time: 2.1131963297724723
+Purity: 0.99 NMI: 0.97 ARI: 0.98 Sil:  0.05 Acc: 1.00 Recall: 0.98 Precision: 0.98
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_16_16_20.csv
+ Time: 2.637597949244082
+Purity: 0.99 NMI: 0.98 ARI: 0.98 Sil:  0.04 Acc: 1.00 Recall: 0.98 Precision: 0.98
+ Time: 2.6647447609342634
+Purity: 0.73 NMI: 0.90 ARI: 0.88 Sil:  0.04 Acc: 0.99 Recall: 0.90 Precision: 0.87
+ Time: 2.654078447725624
+Purity: 0.87 NMI: 0.89 ARI: 0.87 Sil:  0.04 Acc: 0.98 Recall: 0.90 Precision: 0.86
+ Time: 4.283678574953228
+Purity: 0.73 NMI: 0.90 ARI: 0.88 Sil:  0.04 Acc: 0.99 Recall: 0.90 Precision: 0.87
+ Time: 4.168899234198034
+Purity: 0.99 NMI: 0.98 ARI: 0.98 Sil:  0.04 Acc: 1.00 Recall: 0.98 Precision: 0.98
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_32_16_20.csv
+ Time: 4.982612524274737
+Purity: 0.44 NMI: 0.46 ARI: 0.34 Sil:  -2.00 Acc: 0.96 Recall: 0.37 Precision: 0.35
+ Time: 5.0252841579727825
+Purity: 0.39 NMI: 0.38 ARI: 0.25 Sil:  -2.00 Acc: 0.95 Recall: 0.28 Precision: 0.27
+ Time: 7.652842128369957
+Purity: 0.44 NMI: 0.46 ARI: 0.34 Sil:  -2.00 Acc: 0.96 Recall: 0.37 Precision: 0.35
+ Time: 7.36671736035496
+Purity: 0.39 NMI: 0.38 ARI: 0.25 Sil:  -2.00 Acc: 0.95 Recall: 0.28 Precision: 0.27
+ Time: 7.679081165790558
+Purity: 0.45 NMI: 0.44 ARI: 0.31 Sil:  -2.00 Acc: 0.96 Recall: 0.34 Precision: 0.33
+ Time: 7.77084442358464
+Purity: 0.50 NMI: 0.54 ARI: 0.42 Sil:  -2.00 Acc: 0.96 Recall: 0.45 Precision: 0.43
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_64_16_20.csv
+ Time: 9.605043322592973
+Purity: 0.13 NMI: 0.27 ARI: 0.05 Sil:  -2.00 Acc: 0.97 Recall: 0.06 Precision: 0.06
+ Time: 9.742399372067302
+Purity: 0.10 NMI: 0.24 ARI: 0.04 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.05
+ Time: 9.811695592198522
+Purity: 0.10 NMI: 0.24 ARI: 0.03 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.04
+ Time: 13.664302903600037
+Purity: 0.10 NMI: 0.24 ARI: 0.03 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.04
+ Time: 13.671796148456632
+Purity: 0.12 NMI: 0.25 ARI: 0.03 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.05
+ Time: 13.79061230365187
+Purity: 0.13 NMI: 0.27 ARI: 0.05 Sil:  -2.00 Acc: 0.97 Recall: 0.06 Precision: 0.06
+ Time: 13.844271149206907
+Purity: 0.10 NMI: 0.24 ARI: 0.04 Sil:  -2.00 Acc: 0.97 Recall: 0.05 Precision: 0.05
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_128_16_20.csv
+ Time: 19.312960220128296
+Purity: 0.08 NMI: 0.36 ARI: 0.02 Sil:  -2.00 Acc: 0.98 Recall: 0.02 Precision: 0.02
+ Time: 19.418208008538933
+Purity: 0.08 NMI: 0.36 ARI: 0.02 Sil:  -2.00 Acc: 0.98 Recall: 0.02 Precision: 0.02
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_256_16_20.csv
+ Time: 37.892910519614816
+Purity: -2.00 NMI: 0.51 ARI: 0.01 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.23411562936381
+Purity: -2.00 NMI: 0.51 ARI: 0.01 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.24417808521539
+Purity: -2.00 NMI: 0.52 ARI: 0.01 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.27263284018263
+Purity: -2.00 NMI: 0.51 ARI: 0.01 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 53.78996817842126
+Purity: -2.00 NMI: 0.51 ARI: 0.01 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 54.27260417183861
+Purity: -2.00 NMI: 0.51 ARI: 0.01 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 54.661465214006604
+Purity: -2.00 NMI: 0.52 ARI: 0.01 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_512_16_20.csv
+ Time: 83.45435581905767
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 83.48415677957237
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 83.67901523038745
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 83.81190929338337
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_1024_16_20.csv
+ Time: 153.007195238024
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 166.6060803526081
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 167.5294626899995
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 222.18357520764692
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 223.24575028242543
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 222.66050784485415
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 225.93588400902226
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_2048_16_20.csv
+ Time: 331.84706106744704
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 332.10281662382187
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 334.6620431052521
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 334.93414609795434
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 478.8463940782473
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 485.1696824723855
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 486.28654769323765
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121132_SYN_4096_64_64_16_20.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_8_16_40.csv
+ Time: 1.4652631973847747
+Purity: 0.14 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+ Time: 1.4669181747362017
+Purity: 0.14 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+ Time: 1.4637090678326785
+Purity: 0.14 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+ Time: 1.864436852838844
+Purity: 0.16 NMI: 0.01 ARI: 0.01 Sil:  0.00 Acc: 0.78 Recall: 0.14 Precision: 0.13
+ Time: 1.863876380957663
+Purity: 0.14 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+ Time: 1.9010085323825479
+Purity: 0.14 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_16_16_40.csv
+ Time: 3.473372511193156
+Purity: 0.09 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+ Time: 3.427322398405522
+Purity: 0.08 NMI: 0.02 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+ Time: 3.3809254578314722
+Purity: 0.08 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+ Time: 3.446517435554415
+Purity: 0.09 NMI: 0.02 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_32_16_40.csv
+ Time: 4.984634969476611
+Purity: 0.06 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 4.988781845383346
+Purity: 0.07 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.652517172787339
+Purity: 0.06 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.708785381820053
+Purity: 0.07 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.735756616387516
+Purity: 0.06 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.770952729415148
+Purity: 0.06 NMI: 0.05 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_64_16_40.csv
+ Time: 9.74063410339877
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 9.754702312871814
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 9.801054531242698
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 9.777978910226375
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 13.590344222355634
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 13.748911038786172
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 16.218482747580858
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_128_16_40.csv
+ Time: 19.05744427628815
+Purity: 0.05 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 19.102525824587794
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 19.150760677456855
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 19.202784904185684
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.501635081227867
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.549183164164425
+Purity: 0.05 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.53944256240502
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.87011102018878
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_256_16_40.csv
+ Time: 37.962886608205736
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 37.941857597231866
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.492413461394605
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 39.02300036996603
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 54.04762041876093
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 53.73312425157055
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 54.08229486355558
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 54.112422769796105
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_512_16_40.csv
+ Time: 83.34716117475182
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 76.96705173542723
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 83.63509348137305
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 83.46963445357979
+Purity: -2.00 NMI: 0.66 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 107.3750904912129
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 107.54195311618969
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_1024_16_40.csv
+ Time: 153.8333117397502
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 166.34139614980668
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 166.93758611185476
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 169.08427263060585
+Purity: -2.00 NMI: 0.78 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 222.34012350877748
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 222.23341155322268
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 224.2632404666394
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 226.40622675800697
+Purity: -2.00 NMI: 0.78 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_2048_16_40.csv
+ Time: 305.16534387860446
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 330.88294066218657
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 329.84042587606234
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 333.5133101687767
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 478.24497971842067
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 479.18106107981873
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 482.9349253585562
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121348_SYN_4096_64_64_16_40.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_8_16_80.csv
+ Time: 1.4579259598627687
+Purity: 0.14 NMI: 0.00 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+ Time: 1.4627595050260425
+Purity: 0.14 NMI: 0.00 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+ Time: 1.8184614556841552
+Purity: 0.14 NMI: 0.00 ARI: 0.00 Sil:  0.00 Acc: 0.78 Recall: 0.13 Precision: 0.13
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_16_16_80.csv
+ Time: 2.6202582083642483
+Purity: 0.08 NMI: 0.01 ARI: -0.00 Sil:  0.00 Acc: 0.88 Recall: 0.06 Precision: 0.06
+ Time: 2.655098346620798
+Purity: 0.08 NMI: 0.01 ARI: -0.00 Sil:  0.00 Acc: 0.88 Recall: 0.06 Precision: 0.06
+ Time: 2.6497219832614065
+Purity: 0.08 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+ Time: 2.637453311402351
+Purity: 0.09 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+ Time: 3.346906061004847
+Purity: 0.09 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+ Time: 3.4175916758365927
+Purity: 0.08 NMI: 0.01 ARI: 0.00 Sil:  0.00 Acc: 0.88 Recall: 0.07 Precision: 0.06
+ Time: 3.3922305915504696
+Purity: 0.08 NMI: 0.01 ARI: -0.00 Sil:  0.00 Acc: 0.88 Recall: 0.06 Precision: 0.06
+ Time: 3.39105214336887
+Purity: 0.08 NMI: 0.01 ARI: -0.00 Sil:  0.00 Acc: 0.88 Recall: 0.06 Precision: 0.06
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_32_16_80.csv
+ Time: 4.958985218591988
+Purity: 0.06 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 4.978787423018366
+Purity: 0.05 NMI: 0.04 ARI: -0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 4.983561501372606
+Purity: 0.06 NMI: 0.04 ARI: -0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 5.036917776614428
+Purity: 0.06 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.659307509660721
+Purity: 0.06 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.676068940199912
+Purity: 0.05 NMI: 0.04 ARI: -0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.688502595759928
+Purity: 0.06 NMI: 0.04 ARI: 0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+ Time: 6.708508360013366
+Purity: 0.06 NMI: 0.04 ARI: -0.00 Sil:  -2.00 Acc: 0.94 Recall: 0.03 Precision: 0.03
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_64_16_80.csv
+ Time: 9.641862849146127
+Purity: 0.05 NMI: 0.13 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 9.685813040379434
+Purity: 0.05 NMI: 0.13 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 9.662832354567945
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 9.717247271817177
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 13.602262709382922
+Purity: 0.05 NMI: 0.13 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 13.755401288624853
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 13.6158649421297
+Purity: 0.05 NMI: 0.13 ARI: -0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+ Time: 13.782715306244791
+Purity: 0.05 NMI: 0.14 ARI: 0.00 Sil:  -2.00 Acc: 0.97 Recall: 0.02 Precision: 0.02
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_128_16_80.csv
+ Time: 18.988778926525264
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 19.155869158823045
+Purity: 0.05 NMI: 0.31 ARI: -0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 19.05392501819879
+Purity: 0.05 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 19.225361745990813
+Purity: 0.05 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.225939526222646
+Purity: 0.05 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.560799234360456
+Purity: 0.05 NMI: 0.31 ARI: -0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.61909548062831
+Purity: 0.05 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+ Time: 27.819412369839846
+Purity: 0.06 NMI: 0.32 ARI: 0.00 Sil:  -2.00 Acc: 0.98 Recall: 0.01 Precision: 0.01
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_256_16_80.csv
+ Time: 37.79902313938364
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 37.91551307113841
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.246427259221676
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 38.06851867502555
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 53.48627579733729
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 54.23593644835055
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 54.784826452378184
+Purity: -2.00 NMI: 0.50 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_512_16_80.csv
+ Time: 82.92837458718569
+Purity: -2.00 NMI: 0.66 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 84.44091011984274
+Purity: -2.00 NMI: 0.66 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 83.60871110111475
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 99.3175118263811
+Purity: -2.00 NMI: 0.66 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 107.03546079993248
+Purity: -2.00 NMI: 0.66 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 107.09285069582984
+Purity: -2.00 NMI: 0.66 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 108.45820097802206
+Purity: -2.00 NMI: 0.66 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_1024_16_80.csv
+ Time: 154.8330175739713
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 167.39804874435066
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 167.65749903321267
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 168.83151364838704
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 223.26171549400314
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 223.99742508456112
+Purity: -2.00 NMI: 0.78 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+Dataset already generated: /home/nmtoan/DATASET/ANN_CATEGORICAL/SYN/SYN_4096_64_2048_16_80.csv
+ Time: 326.5558202427812
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 331.0304669796489
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 333.07589973835275
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 333.5536485148594
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 477.442095679231
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 484.1614556791261
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 482.2392543840222
+Purity: -2.00 NMI: 0.88 ARI: 0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+ Time: 487.63538418440146
+Purity: -2.00 NMI: 0.88 ARI: -0.00 Sil:  -2.00 Acc: -2.00 Recall: -2.00 Precision: -2.00
+Results are saved at: RESULT/r_tune_k_16121638_SYN_4096_64_64_16_80.csv.csv
+
+=================================== RESOURCE INFORMATION ===================================
+ Requested Resource:
+ mem=512000000kb,walltime=168:00:00,ncpus=128,place=pack 
+ Used Resource: 
+ mem=1979436kb,walltime=09:28:14,ncpus=128,cpupercent=409,vmem=9333424kb
+============================================================================================

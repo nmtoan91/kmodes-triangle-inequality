@@ -1,0 +1,36 @@
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "/home/nmtoan/WORK/kmodes-triangle-inequality/KmodesTriangleInequality/RunParallel.py", line 34, in f
+    alg4.DoCluster(seed, args.init_clusters)
+  File "/home/nmtoan/WORK/kmodes-triangle-inequality/KmodesTriangleInequality/kModesTriangleInequality_IEEEAccess.py", line 106, in DoCluster
+    l_hard_indices = sklearn.metrics.pairwise_distances(self.X[hard_indices], c, metric = overlapMetric)
+  File "/home/nmtoan/.local/lib/python3.8/site-packages/sklearn/metrics/pairwise.py", line 2196, in pairwise_distances
+    return _parallel_pairwise(X, Y, func, n_jobs, **kwds)
+  File "/home/nmtoan/.local/lib/python3.8/site-packages/sklearn/metrics/pairwise.py", line 1766, in _parallel_pairwise
+    return func(X, Y, **kwds)
+  File "/home/nmtoan/.local/lib/python3.8/site-packages/sklearn/metrics/pairwise.py", line 1786, in _pairwise_callable
+    X, Y = check_pairwise_arrays(X, Y, force_all_finite=force_all_finite)
+  File "/home/nmtoan/.local/lib/python3.8/site-packages/sklearn/metrics/pairwise.py", line 165, in check_pairwise_arrays
+    X = check_array(
+  File "/home/nmtoan/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 967, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 64)) while a minimum of 1 is required by check_pairwise_arrays.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "KmodesTriangleInequality/experiment_parallel_script_tune_k.py", line 44, in <module>
+    DN = RunParallel(ni,di,ki,range_, sigma,npr, 'kmodes_ti', datapath,init_clustersS )
+  File "/home/nmtoan/WORK/kmodes-triangle-inequality/KmodesTriangleInequality/RunParallel.py", line 62, in RunParallel
+    R = p.map(f, parameters)
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 364, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 771, in get
+    raise self._value
+ValueError: Found array with 0 sample(s) (shape=(0, 64)) while a minimum of 1 is required by check_pairwise_arrays.
