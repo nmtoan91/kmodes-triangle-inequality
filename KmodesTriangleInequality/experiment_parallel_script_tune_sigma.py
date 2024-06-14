@@ -12,10 +12,10 @@ import pandas as pd
 if __name__ == '__main__':
     
     sigma = 0.1
-    ni=n = 2048
+    ni=n = 4096
     di=d = 64
     ki=k = 64
-    range_ = 16
+    range_ = 2
     npr = 4
     #for range_ in [2,4,8,16,32]:
     #nn = [2**i for i in  range(9,22)]
